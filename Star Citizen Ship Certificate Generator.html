@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.ueeshipregister.com/citizencard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>Gerador de cartao de identidade ARCA</title>
+<link href="./Star Citizen Ship Certificate Generator_files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./Star Citizen Ship Certificate Generator_files/grid.css">
+<link rel="stylesheet" href="./Star Citizen Ship Certificate Generator_files/mobi.css">
+
+
+    <script>
+
+	function populateID(){
+		document.getElementById('imagediv').style.display="block";
+		document.getElementById('theid').src ="";
+		document.getElementById('theid').src = "/CitizenCard?citizenNumber="+document.getElementById('citizenNumber').value+
+		"&name="+document.getElementById('name').value+
+		"&color="+document.getElementById('color').value+
+		"&rank="+document.getElementById('rank').value+
+		"&dateyr="+document.getElementById('dateyr').value+
+		"&datemd="+document.getElementById('datemd').value;
+		document.getElementById('buttontext').innerHTML = "Update ID";
+	
+		alert("Cadastrado com sucesso!");
+		
+}
+</script>
+    
+</head>
+<body>
+	<img id="mg-imgBG" src="./Star Citizen Ship Certificate Generator_files/background.jpg">
+	<div id="mg-scanlineBG"></div>
+	<img id="mg-gridBG" src="./Star Citizen Ship Certificate Generator_files/new-dot.png" alt="">
+	<div id="mg-dotBG"></div>
+
+	<div id="mg-wrapper">
+			<div class="mainContent">
+				<div class="mg-panel">
+					<form name="idCardInfo" onsubmit="populateID()">
+						<h1>Cadastro geral Arca (CGA) </h1>
+						<div class="row">
+							<div class="half">
+								<label for="citizenNumber"> Nome <input type="text" name="nome" id="nome" maxlength="50"> <small>Nome completo real (este dado é sigiloso e nao sera divulgado) </small>
+								</label>
+							</div>
+							<div class="half">
+								<label for="name"> Nome de comandantes (nick) <input type="text" id="rname" name="rname"> <small>Deve estar exatamente igual ao ingame e no TeamSpeek</small>
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="half">
+									<label for="color"> Area que pretende seguir <select name="role" id="role">
+										<option value="green"> Transpoerte     </option>
+										<option value="bronze"> Suporte       </option>
+										<option value="silver"> Exploracao     </option>
+										<option value="platinum"> Industria   </option>
+										<option value="black"> Combate     </option>
+										<option value="titanium">Competicao </option>
+								</select>
+								
+								</label>
+
+							</div>
+							<div class="half">
+								<label for="shipprefix"> Modela da nave: <select name="prefix" id="prefix">
+										<option value="NONE">Selecione uma opção</option>
+										
+										<option disabled="">Aegis:</option>
+										<option value="AGISAVS"> Aegis Avenger Stalker</option>
+										<option value="AGISAVT"> Aegis Avenger Titan</option>
+										<option value="AGISAVW"> Aegis Avenger Warlock</option>
+										<option value="AGISECL"> Aegis Eclipse</option>
+										<option value="AGISGLD"> Aegis Gladius</option>
+										<option value="AGISIDR"> Aegis Idris</option>
+										<option value="AGISJVN"> Aegis Javelin</option>
+										<option value="AGISREC"> Aegis Reclaimer</option>
+										<option value="AGISRED"> Aegis Redeemer</option>
+										<option value="AGISRET"> Aegis Retaliator</option>
+										<option value="AGISGEM"> Aegis Starfarer Gemini</option>
+										<option value="AGISVAN"> Aegis Vanguard</option>
+										
+										<option disabled="">Anvil:</option>
+										<option value="ANVLCRK"> Anvil Carrack</option>
+										<option value="ANVLCBL"> Anvil Crucible</option>
+										<option value="ANVLGLR"> Anvil Gladiator</option>
+										<option value="ANVLHN"> Anvil Hornet</option>
+										<option value="ANVLHNG"> Anvil Hornet Ghost</option>
+										<option value="ANVLHNT"> Anvil Hornet Tracker</option>
+										<option value="ANVLHRC"> Anvil Hurricane</option>
+										<option value="ANVLSHN"> Anvil Superhornet</option>
+										<option value="ANVLTPN"> Anvil Terrapin</option>
+										
+										<option disabled="">Aopoa:</option>
+										<option value="AOPANX"> Aopoa Nox</option>
+										
+										<option disabled="">Argo:</option>
+										<option value="ARGOMPC"> Argo MPUV Cargo</option>
+										<option value="ARGOMPP"> Argo MPUV Personnel</option>
+
+										<option disabled="">Banu:</option>
+										<option value="BANUDFR"> Banu Defender</option>
+										<option value="BANUMM">  Banu Merchantman</option><!-- BANU WHY U NO MORE CHARS!?! -->
+										
+										<option disabled="">Consolidated Outland:</option>
+										<option value="CONOMUA"> Consolidated Outland Mustang Alpha</option>
+										<option value="CONOMUB"> Consolidated Outland Mustang Beta</option>
+										<option value="CONOMUD"> Consolidated Outland Mustang Delta</option>
+										<option value="CONOMUG"> Consolidated Outland Mustang Gamma</option>
+										<option value="CONOMUO"> Consolidated Outland Mustang Omega</option>
+										
+										<option disabled="">Drake:</option>
+										<option value="DRKECAT"> Drake Catterpillar</option>
+										<option value="DRKCUBK"> Drake Cutlass Black</option>
+										<option value="DRKCUBL"> Drake Cutlass Blue</option>
+										<option value="DRKCURD"> Drake Cutlass Red</option>
+										<option value="DRKDRGN"> Drake Dragonfly</option>
+										<option value="DRKHRLD"> Drake Herald</option>
+										
+										<option disabled="">Esperia:</option>
+										<option value="ESPAGLA"> Esperia Glaive</option>
+										<option value="ESPABLA"> Esperia Blade</option>
+										<option value="ESPPRWL"> Esperia Prowler</option>
+										
+										<option disabled="">Genesis:</option>
+										<option value="GNISSLN"> Genesis Starliner</option>
+										
+										<option disabled="">Kruger:</option>
+										<option value="KRGRP52"> Kruger P-52 Merlin</option>
+										<option value="KRGRP72"> Kruger P-72 Archimedes</option><!-- NO IMAGE YET -->
+										
+										<option disabled="">MISC:</option>
+										<option value="MSCEDVR"> MISC Endeavor</option>
+										<option value="MSCFRLN"> MISC Freelancer</option>
+										<option value="MSCFRDU"> MISC Freelancer DUR</option>
+										<option value="MSCFRMX"> MISC Freelancer MAX</option>
+										<option value="MSCFRMI"> MISC Freelancer MIS</option>
+										<option value="MSCHULA"> MISC Hull A</option>
+										<option value="MSCHULB"> MISC Hull B</option>
+										<option value="MSCHULC"> MISC Hull C</option>
+										<option value="MSCHULD"> MISC Hull D</option>
+										<option value="MSCHULE"> MISC Hull E</option>
+										<option value="MSCPRSP"> MISC Prospector</option>
+										<option value="MSCRAZR"> MISC Razor</option>
+										<option value="MSCRLKR"> MISC Reliant Kore</option>
+										<option value="MSCRLMK"> MISC Reliant Mako</option>
+										<option value="MSCRLSN"> MISC Reliant Sen</option>
+										<option value="MSCRLTN"> MISC Reliant Tana</option>
+										<option value="MSCSTAR"> MISC Starfarer</option>
+										
+										<option disabled="">Origin:</option>
+										<option value="ORGN300"> Origin 300i</option>
+										<option value="ORGN315"> Origin 315p</option>										
+										<option value="ORGN325"> Origin 325a</option>
+										<option value="ORGN350"> Origin 350r</option>
+										<option value="ORGN600"> Origin 600i</option>
+										<option value="ORGN85X"> Origin 85X</option>
+										<option value="ORGN890"> Origin 890 Jump</option>
+										<option value="ORGNM50"> Origin M50</option>
+										
+										<option disabled="">RSI:</option>
+										<option value="RSIAUCL"> RSI Aurora CL</option>
+										<option value="RSIAUES"> RSI Aurora ES</option>
+										<option value="RSIAULN"> RSI Aurora LN</option>
+										<option value="RSIAULX"> RSI Aurora LX</option>
+										<option value="RSIAUMR"> RSI Aurora MR</option>
+										<option value="RSICOAN"> RSI Constellation Andromeda </option>
+										<option value="RSICOAQ"> RSI Constellation Aquila</option>
+										<option value="RSICOPX"> RSI Constellation Phoenix</option>
+										<option value="RSICOTR"> RSI Constellation Taurus</option>
+										<option value="RSIORIN"> RSI Orion</option>
+										<option value="RSIPLRS"> RSI Polaris</option>
+										<option value="RSIURSA"> RSI URSA Rover</option>
+										
+										<option disabled="">Tumbril:</option>
+										<option value="TMBLCYL"> Tumbril Cyclone</option>
+										<option value="TMBLCYA"> Tumbril Cyclone-AA</option>
+										<option value="TMBLCYC"> Tumbril Cyclone-RC</option>
+										<option value="TMBLCYN"> Tumbril Cyclone-RN</option>
+										<option value="TMBLCYR"> Tumbril Cyclone-TR</option>										
+										
+										<option disabled="XIANAN">Xi-An:</option>
+										<option value="XIANSCT"> Xi-An Scout</option>
+										
+										<option disabled="">Vanduul:</option>
+										<option value="VNDLSCY">Vanduul Scythe</option>
+								</select>
+								<small>Em caso de ter mais de uma nave escolha a que pretende usar</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="half">
+							<label for="date"> ID da steam <input type="text" id="idsteam" name="idsteam" maxlength="17"> <small>ID da sua conta steam (este dado é sigiloso e nao sera divulgado)</small>
+								</label>
+							</div>
+							<div class="half">
+							<label for="date"> Numero de celular  <input type="text" id="cell" name="datemd" maxlength="13"> <small>Sera utilizado par adicionar no grupo do WhatsApp. Inserir com DDD EX. (XX)XXXX-XXXX </small>
+								</label>
+								<!-- This half left intentionally blank -->
+							</div>
+						</div>
+					</form>
+						<button id="generateButton" onclick="populateID()" class="mg-svg-button mg-action" value="Generate ID" style="width: 158px;"><svg data-path-hover="M6 6 L6 6 L124 6 L128 9 L156 9 L156 49 L10 49 L6 45 L6 6" height="65" width="163" viewBox="0 0 163 65" preserveAspectRatio="xMinYMin slice">	<filter id="glow0">	<fegaussianblur in="SourceAlpha" stdDeviation="2"></fegaussianblur>	<feoffset dx="0" dy="0" result="offsetblur"></feoffset>	<feflood flood-color="#9fe3f6"></feflood>	<fecomposite in2="offsetblur" operator="in"></fecomposite>	<femerge>	<femergenode></femergenode>	<femergenode in="SourceGraphic"></femergenode>	</femerge>	</filter> 	<filter id="glowHover0">	<fegaussianblur in="SourceAlpha" stdDeviation="3"></fegaussianblur>	<feoffset dx="0" dy="0" result="offsetblur"></feoffset>	<feflood flood-color="#fff"></feflood>	<fecomposite in2="offsetblur" operator="in"></fecomposite>	<femerge>	<femergenode></femergenode>	<femergenode in="SourceGraphic"></femergenode>	</femerge>	</filter> 	<path class="outline" d="M6 6 L6 6 L69 6 L73 9 L156 9 L156 49 L10 49 L6 45 L6 6" filter="url(#glow0)"></path><path class="body" d="M6 6 L6 6 L69 6 L73 9 L156 9 L156 49 L10 49 L6 45 L6 6"></path><desc>Created with Snap</desc><defs></defs></svg><div id="buttontext">Cadastrar</div></button>
+					<div id="imagediv" style="display:none;">
+						<div class="mg-message warning">
+							<h3>ATENÇÃO!</h3>
+							<p>A partir deste momento você já esta presente nos bancos de dados da ARCA, portanto esta sujeito as regras, beneficios e punições!<p>A carteira que foi gerada ao se cadastrar deve estar sempre presente em seu avatar do TeamSpeek! 
+							
+							
+								
+						</div>
+						
+						<img id="fdsf" alt="Erro 404" class="mg-image" src="https://i.ytimg.com/vi/9lFCC8UsdBM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBK0JbSMeSwAng13i-DwJqsyjvbNw" width="100%" height="100%/">
+					</div>
+						
+					
+							
+				</div>
+				<p>
+					
+				</p>
+			</div>
+			<div class="mg-sidebar">
+				<div class="mg-panel">
+					<h3>Links da ARCA</h3>
+					<ul>
+						<li><a href="https://robertsspaceindustries.com/orgs/ARCA">Organizacao ARCA</a></li>
+						<li><a href="https://robertsspaceindustries.com/orgs/ARCA">Regras, beneficios e punições</a></li>
+						<li><a href="ts3server://131.196.199.51/?port=9015&nickname=">TeamSpeek</a></li>
+		
+					</ul>
+				</div>
+			
+			</div>
+		</div>
+	<script src="./Star Citizen Ship Certificate Generator_files/jquery.min.js.download"></script>
+	<script src="./Star Citizen Ship Certificate Generator_files/snap.svg-min.js.download"></script>
+	<script src="./Star Citizen Ship Certificate Generator_files/jquery.mobiStyle-min.js.download"></script>
+	<script>
+		$(document).mobiStyle();
+	</script>
+
+</body></html>
